@@ -1,4 +1,6 @@
 import React from 'react'
-const App = () => <div>Your React/Redux Application</div>
+import UserSignIn from './components/UserSignIn'
+
+const App = () => <UserSignIn />
 
 export default App

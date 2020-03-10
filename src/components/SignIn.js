@@ -1,0 +1,56 @@
+import React, { useState } from 'react'
+import Button from './Button'
+
+const UserSignIn = () => {
+  const [username, setUsername] = useState('')
+  const [password, setPassword] = useState('')
+
+  return (
+    <form onSubmit={(evt) => {
+      evt.preventDefault()
+      alert(JSON.stringify({ username, password }))
+    }}
+    >
+      <FormInput
+        value={username}
+        onChange={setUsername}
+        label='Username'
+      />
+      <FormInput
+        value={password}
+        onChange={setPassword}
+        label='Password'
+        type='password'
+      />
+      <Button>
+        Sign in
+      </Button>
+      <SignLink
+        value='Sign Up'
+        href='sign_up'
+        class=''
+      />
+    </form>
+  )
+}
+
+const FormInput = ({ value, onChange, label, inputType = 'text' }) => {
+  return (
+    <>
+      <label>{label}</label>
+      <input
+        type={inputType}
+        value={value}
+        onChange={(evt) => onChange(evt.target.value)}
+      />
+    </>
+  )
+}
+
+const SignLink = ({value, href}) => {
+  return (
+    <a href={href}>{value}</a>
+  )
+}
+
+export default UserSignIn
