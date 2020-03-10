@@ -1,5 +1,5 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import UserSignIn from './UserSignIn'
+import SignIn from './SignIn'
 
-storiesOf('UserSignIn', module).add('default', () => <UserSignIn />)
+storiesOf('SignIn', module).add('default', () => <SignIn />)

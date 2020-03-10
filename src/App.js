@@ -1,6 +1,6 @@
 import React from 'react'
-import UserSignIn from './components/UserSignIn'
+import SignIn from './components/SignIn'
 
-const App = () => <UserSignIn />
+const App = () => <SignIn />
 
 export default App

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from './Button'
 
-const UserSignIn = () => {
+const SignIn = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
 
@@ -53,4 +53,4 @@ const SignLink = ({value, href}) => {
   )
 }
 
-export default UserSignIn
+export default SignIn
