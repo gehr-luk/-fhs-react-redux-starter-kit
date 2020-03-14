@@ -4,11 +4,13 @@ import Button from './Button'
 const SignUp = () => {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
+  const [passwordConfirm, setPasswordConfirm] = useState('')
 
   return (
     <form onSubmit={(evt) => {
       evt.preventDefault()
-      alert(JSON.stringify({ username, password }))
+      if (password !== passwordConfirm) alert('Passwords not equal!')
+      else alert(JSON.stringify({ username, password }))
     }}
     >
       <FormInput
@@ -23,8 +25,8 @@ const SignUp = () => {
         type='password'
       />
       <FormInput
-        value={password}
-        onChange={setPassword}
+        value={passwordConfirm}
+        onChange={setPasswordConfirm}
         label='Repeat Password'
         type='password'
       />
@@ -53,7 +55,7 @@ const FormInput = ({ value, onChange, label, inputType = 'text' }) => {
   )
 }
 
-const SignLink = ({value, href}) => {
+const SignLink = ({ value, href }) => {
   return (
     <a href={href}>{value}</a>
   )
