@@ -2,8 +2,8 @@ import React from 'react'
 import SignIn from './components/SignIn'
 import List from './components/List'
 
-class App extends React.Component {
-  state = {
+const App = () => {
+  const state = {
     iOweList: [
       {
         id: 1,
@@ -23,15 +23,13 @@ class App extends React.Component {
     ],
     owesMeList: [
       {
-        id:1,
+        id: 1,
         name: 'somebody',
         paid: false
       }
     ]
   }
-  render () {
-    return <div><SignIn /><List iOweList={this.state.iOweList} /></div>
-  }
+  return <div><SignIn /><List iOweList={state.iOweList} /></div>
 }
 
 export default App
