@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Button from './Button'
 import styles from './Login.module.css'
+import FormInput from './FormInput'
+import LoginLink from './LoginLink'
 
 const SignIn = () => {
   const [email, setEmail] = useState('')
@@ -34,26 +36,6 @@ const SignIn = () => {
         />
       </form>
     </div>
-  )
-}
-
-const FormInput = ({ value, onChange, label, inputType = 'text' }) => {
-  return (
-    <div className={`${styles.inputContainer}`}>
-      <label className={`${styles.formLabel}`}>{label}</label>
-      <input
-        type={inputType}
-        value={value}
-        onChange={(evt) => onChange(evt.target.value)}
-        className={`${styles.formInput}`}
-      />
-    </div>
-  )
-}
-
-const LoginLink = ({ value, href }) => {
-  return (
-    <a href={href} className={`${styles.loginLink}`}>{value}</a>
   )
 }
 
