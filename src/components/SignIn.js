@@ -9,12 +9,12 @@ const SignIn = () => {
   const [password, setPassword] = useState('')
 
   return (
-    <div className={`${styles.formContainer}`}>
+    <div className={styles.formContainer}>
       <form
         onSubmit={(evt) => {
           evt.preventDefault()
           alert(JSON.stringify({ email, password }))
-        }} className={`${styles.form}`}
+        }} className={styles.form}
       >
         <FormInput
           value={email}

@@ -10,13 +10,13 @@ const SignUp = () => {
   const [passwordConfirm, setPasswordConfirm] = useState('')
 
   return (
-    <div className={`${styles.formContainer}`}>
+    <div className={styles.formContainer}>
       <form
         onSubmit={(evt) => {
           evt.preventDefault()
           if (password !== passwordConfirm) alert('Passwords not equal!')
           else alert(JSON.stringify({ username, password }))
-        }} className={`${styles.form}`}
+        }} className={styles.form}
       >
         <FormInput
           value={username}
