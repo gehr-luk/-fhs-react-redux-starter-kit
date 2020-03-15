@@ -1,55 +1,59 @@
 import React, { useState } from 'react'
 import Button from './Button'
+import styles from './Login.module.css'
 
 const SignIn = () => {
-  const [username, setUsername] = useState('')
+  const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
   return (
-    <form onSubmit={(evt) => {
-      evt.preventDefault()
-      alert(JSON.stringify({ username, password }))
-    }}
-    >
-      <FormInput
-        value={username}
-        onChange={setUsername}
-        label='Username'
-      />
-      <FormInput
-        value={password}
-        onChange={setPassword}
-        label='Password'
-        type='password'
-      />
-      <Button>
-        Sign in
-      </Button>
-      <SignLink
-        value='Sign Up'
-        href='sign_up'
-        class=''
-      />
-    </form>
+    <div className={`${styles.formContainer}`}>
+      <form
+        onSubmit={(evt) => {
+          evt.preventDefault()
+          alert(JSON.stringify({ email, password }))
+        }} className={`${styles.form}`}
+      >
+        <FormInput
+          value={email}
+          onChange={setEmail}
+          label='Email'
+        />
+        <FormInput
+          value={password}
+          onChange={setPassword}
+          label='Password'
+          type='password'
+        />
+        <Button>
+          Sign in
+        </Button>
+        <LoginLink
+          value='Sign Up'
+          href='sign_up'
+        />
+      </form>
+    </div>
   )
 }
 
 const FormInput = ({ value, onChange, label, inputType = 'text' }) => {
   return (
-    <>
-      <label>{label}</label>
+    <div className={`${styles.inputContainer}`}>
+      <label className={`${styles.formLabel}`}>{label}</label>
       <input
         type={inputType}
         value={value}
         onChange={(evt) => onChange(evt.target.value)}
+        className={`${styles.formInput}`}
       />
-    </>
+    </div>
   )
 }
 
-const SignLink = ({value, href}) => {
+const LoginLink = ({ value, href }) => {
   return (
-    <a href={href}>{value}</a>
+    <a href={href} className={`${styles.loginLink}`}>{value}</a>
   )
 }
 
