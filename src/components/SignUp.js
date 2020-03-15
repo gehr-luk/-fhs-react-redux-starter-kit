@@ -36,7 +36,7 @@ const SignUp = () => {
           type='password'
         />
         <Button>
-        Sign in
+        Sign up
         </Button>
         <LoginLink
           value='Sign In'
