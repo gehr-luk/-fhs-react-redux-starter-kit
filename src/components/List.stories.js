@@ -14,12 +14,24 @@ const iOweList =
     id: 2,
     amount: 10.50,
     name: 'test1',
-    paid: false
+    paid: true
   },
   {
     id: 3,
     amount: 10.50,
     name: 'test2',
+    paid: false
+  },
+  {
+    id: 4,
+    amount: 10.50,
+    name: 'test3',
+    paid: true
+  },
+  {
+    id: 5,
+    amount: 10.50,
+    name: 'test4',
     paid: false
   }
 ]
