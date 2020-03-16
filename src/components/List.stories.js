@@ -6,16 +6,19 @@ const iOweList =
 [
   {
     id: 1,
+    amount: 10.50,
     name: 'test0',
     paid: false
   },
   {
     id: 2,
+    amount: 10.50,
     name: 'test1',
     paid: false
   },
   {
     id: 3,
+    amount: 10.50,
     name: 'test2',
     paid: false
   }
