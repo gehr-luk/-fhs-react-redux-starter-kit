@@ -70,3 +70,10 @@
     color: white;
 }
 
+.buttonInvisible {
+    visibility: hidden;
+}
+
+.textLineThrough {
+    text-decoration: line-through;
+}
