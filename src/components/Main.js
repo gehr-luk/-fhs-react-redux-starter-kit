@@ -8,7 +8,7 @@ const Main = ({ userList, iOweList }) => {
     <div>
       <SwitchDeptor />
       <CreateMoneyTransaction userList={userList} />
-      <List iOweList={iOweList} />
+      <List iOweList={iOweList} userList={userList} />
     </div>
   )
 }
