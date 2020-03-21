@@ -1,0 +1,56 @@
+.formSelectContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.createMoneyContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.formSelect {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 295px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("https://image.flaticon.com/icons/png/512/60/60995.png");
+}
+
+.formSelectLabel {
+    line-height: 1.7em;
+}
+
+.selectOption {
+    height: 200px;
+}
+
+.formAmountInput {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 295px;
+    font: inherit;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.createButton {
+    flex-grow: 1;
+    margin-top: calc(1.7em + 8px);
+    height: 30px;
+    padding: 0;
+    width: 300px;
+}
+
+.label {
+    line-height: 1.7em;
+}

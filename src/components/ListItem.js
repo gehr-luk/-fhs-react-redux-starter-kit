@@ -5,7 +5,7 @@ const ListItem = ({ iOweListItem }) => {
   const amount = iOweListItem.amount.toString().replace('.', ',')
   const buttonInvisible = iOweListItem.paid ? style.buttonInvisible : ''
   const textLineThrough = iOweListItem.paid ? style.textLineThrough : ''
-  
+
   return (
     <div className={style.listItemContainer}>
       <li className={style.listItem}>
