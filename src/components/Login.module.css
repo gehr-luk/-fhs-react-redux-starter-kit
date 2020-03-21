@@ -10,7 +10,7 @@
     margin-top: 8px;
     margin-bottom: 8px;
     width: 295px;
-    line-height: 1.7em;
+    height: 25px;
     border: 2px solid black;
     border-radius: 2px;
 }
@@ -47,7 +47,8 @@
 }
 
 .inputContainer {
-    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
