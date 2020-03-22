@@ -3,12 +3,15 @@ import React from 'react'
 import SelectOption from './SelectOption'
 
 const FormSelect = ({ userList, onChange, label, forSelect }) => {
-  const selectOptions = userList.map((user) =>
-    <SelectOption
-      key={user.id}
-      user={user}
-    />
-  )
+  let selectOptions = null
+  if (userList) {
+    selectOptions = userList.map((user) =>
+      <SelectOption
+        key={user.id}
+        user={user}
+      />
+    )
+  }
 
   return (
     <div className={styles.formSelectContainer}>

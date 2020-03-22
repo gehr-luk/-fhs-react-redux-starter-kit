@@ -2,9 +2,14 @@ import React from 'react'
 import style from './transaction.module.css'
 
 const ListItem = ({ iOweListItem, userList }) => {
-  const amount = iOweListItem.amount.toString().replace('.', ',')
-  const buttonInvisible = (iOweListItem.paidAt !== null) ? style.buttonInvisible : ''
-  const textLineThrough = (iOweListItem.paidAt !== null) ? style.textLineThrough : ''
+  let amount = null;
+  let buttonInvisible = null;
+  let textLineThrough = null;
+  if (iOweListItem) {
+    amount = iOweListItem.amount.toString().replace('.', ',')
+    buttonInvisible = (iOweListItem.paidAt !== null) ? style.buttonInvisible : ''
+    textLineThrough = (iOweListItem.paidAt !== null) ? style.textLineThrough : ''
+  }
 
   return (
     <div className={style.listItemContainer}>

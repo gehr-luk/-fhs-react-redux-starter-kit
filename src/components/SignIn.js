@@ -32,7 +32,7 @@ const SignIn = () => {
         </Button>
         <LoginLink
           value='Sign Up'
-          href='sign_up'
+          href='/sign_up'
         />
       </form>
     </div>

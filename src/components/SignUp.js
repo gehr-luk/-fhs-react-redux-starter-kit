@@ -40,7 +40,7 @@ const SignUp = () => {
         </Button>
         <LoginLink
           value='Sign In'
-          href='sign_in'
+          href='/sign_in'
           class=''
         />
       </form>

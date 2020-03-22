@@ -1,9 +1,10 @@
 import styles from './Login.module.css'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const LoginLink = ({ value, href }) => {
   return (
-    <a href={href} className={`${styles.loginLink}`}>{value}</a>
+    <Link to={href} className={`${styles.loginLink}`}>{value}</Link>
   )
 }
 
