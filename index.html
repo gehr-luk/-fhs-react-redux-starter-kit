@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>CORS Versuch</title>
+  </head>
+  <body>
+    <h1>CORS Versuch</h1>
+    <kbd>
+
+    </kbd>
+    <script>
+    console.log("fetch https://iou-brigitte.herokuapp.com/users.json");
+
+    fetch("https://iou-brigitte.herokuapp.com/users.json")
+      .then(function(response) {
+        console.log("Response wird empfangen");
+        return response.json();
+      })
+      .then(function(data) {
+        console.log("data wurde aus dem Response herausgelesen");
+        console.log(data);
+        let container = document.getElementsByTagName('kbd')[0];
+        container.innerText += JSON.stringify(data);
+      });   
+
+
+    fetch("https://iou-brigitte.herokuapp.com/api/v1/users/")
+      .then(function(response) {
+        console.log("Response wird empfangen");
+        return response.json();
+      })
+      .then(function(data) {
+        console.log("data wurde aus dem Response herausgelesen");
+        console.log(data);
+        let container = document.getElementsByTagName('kbd')[0];
+        container.innerText += JSON.stringify(data);
+      });             
+    </script>
+  </body>
+</html> 
