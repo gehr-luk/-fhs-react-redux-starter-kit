@@ -1,8 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Main from './Main'
+import Homepage from './Homepage'
 import { iOweList, userList } from './MockData'
 
-storiesOf('Main', module).add('default', () => (
-  <Main iOweList={iOweList} userList={userList} />
+storiesOf('Homepage', module).add('default', () => (
+  <Homepage iOweList={iOweList} userList={userList} />
 ))

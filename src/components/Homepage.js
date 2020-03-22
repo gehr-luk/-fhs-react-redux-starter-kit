@@ -3,7 +3,7 @@ import SwitchDeptor from './SwitchDeptor'
 import CreateMoneyTransaction from './CreateMoneyTransaction'
 import List from './List'
 
-const Main = ({ userList, iOweList }) => {
+const Homepage = ({ userList, iOweList }) => {
   return (
     <div>
       <SwitchDeptor />
@@ -13,4 +13,4 @@ const Main = ({ userList, iOweList }) => {
   )
 }
 
-export default Main
+export default Homepage
