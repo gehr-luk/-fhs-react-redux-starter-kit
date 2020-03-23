@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e1ce930a-17d0-4e7d-b0d5-c412788048de/deploy-status)](https://app.netlify.com/sites/confident-ramanujan-540261/deploys)
+
 # FHS React/Redux Starter Kit
 
 This a starter kit for students of the University of Applied Sciences Salzburg, for the lectures:
